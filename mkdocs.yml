@@ -1,0 +1,19 @@
+site_name: 我的博客
+site_url: https://Linsey0229.github.io/blog/
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: 切换至暗黑模式
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: 切换至明亮模式
+nav:
+  - 首页: index.md
+  - 博客:
+    - 第一篇文章: first-post.md
