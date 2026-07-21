@@ -1,4 +1,4 @@
-\# 《月华辉映之刻》鉴赏
+\#《月华辉映之刻》鉴赏
 
 
 我始终觉得月华是一部非常温和而绝无踩雷可能的买断制乙游，剧本娘写的时候必定是充分考虑到了大众喜好。因为设定非常六边形战士——剧本本身十分有国乙风味，攻略对象皆是即使身处黑暗也仍心向光明的理想主义者，而且都洁身自好拒绝黄赌毒。主人公，善良而不失锋芒——会凶人，会咬人，会踢人老二。且作为本作不可多得的、在爱与尊重中长大的健全人，毅然决然地当了三条线的心理咨询师，挽救了六个被原生家庭荼毒的幼小心灵。
@@ -9,9 +9,11 @@
 
 
 
-\## 申司铎线
+\##申司铎线
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115721333971749&bvid=BV1evmrB4EDj&cid=34744765655&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115721333971749&bvid=BV1evmrB4EDj&cid=34744765655&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
 
 申司铎线，我已经特意做了一个十分钟的视频来着重分析申线里的塑造了，那么在这里稍微提一下他在另外两条线的塑造。
 
@@ -29,7 +31,7 @@
 
 
 
-\## 郝连重线
+\##郝连重线
 
 
 
@@ -48,8 +50,7 @@
 一些看似很傻的事总要有人去做，不被世俗兼容的理想总要有人去实现。所以我相当喜欢郝连重真相线的HE \*\*赤羽枭之谜\*\*——郝连重和主人公白天经营餐馆，晚上化身江湖义士“赤羽枭”和“碧翎雀”为百姓的愿望奔走效劳：实现人们愿望的神使小鸟不再孤身一人，百姓无处安放的祈愿终会被神明看到。所以，请坚守你的正义吧，渺小的蜉蝣终会撼动大树。
 
 
-
-> 真的是很温柔的，对理想主义的高歌。
+真的是很温柔的，对理想主义的高歌。
 
 
 
@@ -57,7 +58,7 @@
 
 
 
-\## 裴沫线
+\##裴沫线
 
 
 
