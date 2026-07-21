@@ -16,6 +16,10 @@ theme:
 nav:
   - 首页: index.md
   - 博客:
+    - 书评:
     - 《茉莉香片》书评: first-post.md
     - 《倾城之恋》书评: zhangailing.md
-    - 《月华辉映之刻》鉴赏: moon.md
+    - 游戏鉴赏:
+    - 《月华辉映之刻》鉴赏: moon.md、
+    - 同人文:
+    - 《血河与神相的十五年纠缠不休》: shiwunian.md
