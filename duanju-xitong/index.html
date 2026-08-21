@@ -1,0 +1,1560 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://Linsey0229.github.io/blog/duanju-xitong/">
+      
+      
+        <link rel="prev" href="../gongwuduhe/">
+      
+      
+        <link rel="next" href="../first-post/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>短剧剧本（无限流） - 我的博客</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="我的博客" class="md-header__button md-logo" aria-label="我的博客" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            我的博客
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              短剧剧本（无限流）
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换至暗黑模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至暗黑模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="切换至明亮模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至明亮模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="我的博客" class="md-nav__button md-logo" aria-label="我的博客" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    我的博客
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人物小传
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    人物小传
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gongwuduhe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    公无渡河
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    剧本
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    剧本
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    短剧剧本（无限流）
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    短剧剧本（无限流）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题材
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        故事简介
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一卡大纲
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一卡大纲">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一集：不想死就干活吧～
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二集：言情副本？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三集：我不想当肥料
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第四集：通关之法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第五集：一起睡
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第六集：希利欧
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第七集：两面包夹芝士
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一集正本
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第一集正本">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-1 写字楼内·深夜
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-2 街道·深夜
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-3 蓝色空间·时间不明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-4 祭坛·夜
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    书评
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    书评
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../first-post/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    茉莉香片
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zhangailing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    倾城之恋
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    随笔
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    随笔
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    山
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    游戏文案
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    游戏文案
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wenan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    家具描述
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    游戏鉴赏
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    游戏鉴赏
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diezhidu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    蝶之毒华之锁
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wan-zhong-zhong-yuan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    晚钟&终远
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../moon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    月华辉映之刻
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    同人文
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    同人文
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shiwunian/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【血相】血河与神相的十五年纠缠不休
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guitu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    【血相】归途
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        题材
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        故事简介
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一卡大纲
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一卡大纲">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一集：不想死就干活吧～
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二集：言情副本？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三集：我不想当肥料
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第四集：通关之法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第五集：一起睡
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第六集：希利欧
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第七集：两面包夹芝士
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一集正本
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第一集正本">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-1 写字楼内·深夜
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-2 街道·深夜
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-3 蓝色空间·时间不明
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1-4 祭坛·夜
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">短剧剧本：不想死就干活吧</h1>
+<h2 id="_2">题材</h2>
+<p>BL + 快穿 + 系统 + 伪万人迷</p>
+<hr />
+<h2 id="_3">故事简介</h2>
+<p>苏洛只是个悲惨的打工人，在下班回家的路上被突如其来的车撞到，再一睁眼竟身处一片蔚蓝的空间中。一个叫“系统”的东西告诉苏洛：要看广告充值复活币才能复活哦～。于是苏洛被迫进入副本打工，时薪0.5个复活币。</p>
+<p>第一个副本【神明的祭品】。他，一个大男人，穿着婚纱被绑在祭坛上。作为新郎的神明要吃了他，苏洛只能忍着恐惧故作深沉：“生吃太没品味了，做人要注意火候。”神明笑了笑，他靠这句话活了下来。但系统提示：副本男主好感度越高，黑化值越高，副本越危险。</p>
+<p>苏洛不想说话，他在思考系统是不是和他有仇，为什么他一个直男要攻略另一个男的？</p>
+<p>随后他接连通关【欲望教堂】（夹在魅魔和神父之中两边不做人）、【末世乐园】（开局先傍最强的丧尸王）等一系列副本，苏洛崩溃的朝天大喊：你也没告诉我，这里都是些精神不正常的男主啊？！不仅是男的，还都精神不正常啊！？而且他惊悚地发现：所有副本的男主，都共用一张脸。</p>
+<p>系统不言，只是一味发出滴滴声，重复：您的复活币余额不足，请继续游玩副本进行充值。</p>
+<p>当他攒够复活币准备复活时，系统强制开启了最后一个副本——他的人生。没有任务，没有好感条，只是和一个普通人从相识到相恋，再到一起老去。</p>
+<p>副本结束，苏洛从现实中醒来，手里握着一枚复活币。</p>
+<p>窗外是一张似曾相识的脸。</p>
+<hr />
+<h2 id="_4">一卡大纲</h2>
+<h3 id="_5">第一集：不想死就干活吧～</h3>
+<p>深夜，苏洛加班到凌晨两点，看了眼银行卡余额：4.27元，自嘲一笑。下班路上，在好好的人行道上被失控的轿车撞飞。被创飞的那一刻，苏洛心中悲痛。因为明天就发工资了。</p>
+<p>再度睁眼，苏洛发现自己身处一片蔚蓝的空间中，系统面板自动弹出：“欢迎使用【不想死就干活吧】系统！目前您的灵魂已被系统锁定，要看广告充值复活币才能复活哦～”，面板上赫然写着：当前复活币余额：0。</p>
+<p>“可以选择进副本打工，时薪0.5个/时。不过您没得选择只能打工～”苏洛崩溃：“黑心资本家啊！死了都要压榨！”系统在显示出一个“（＾ｖ＾） ”后，自动开启了第一个副本【神明的祭品】。</p>
+<p>“祝您工作愉快～”白光一闪，苏洛穿进副本。</p>
+<p>可为什么对面是个男的？头上还有好感度条？</p>
+<h3 id="_6">第二集：言情副本？</h3>
+<p>苏洛来不及惊慌自己的攻略对象是个男人这件事，因为那男人的手正停在他的脖颈前1cm。</p>
+<p>苏洛看向面前这个男人，半透明的系统面板忽然弹出来，上面写着一页基础信息，但苏洛显然没时间都看完，一眼瞟见【祂会吃掉被献祭的新娘】。</p>
+<p>在这一刻，苏洛的求生欲得到了史无前例的激发。他故作镇定，深沉叹息说：“生吃没品味，做人要注意火候”。</p>
+<p>神明挑挑眉，笑了笑，收回了手。</p>
+<p>苏洛被带到一间像是厨房的地方。看起来是被要求“做饭”，但他连盐和糖都分不清，瞎糊弄了一堆黑暗料理。</p>
+<p>神明吃了后，系统冷不丁的弹出提示：“好感度+20%。警告：好感度越高，意味着黑化值越高、副本越危险。”苏洛懵了：合着还不是个言情副本？</p>
+<p>那天晚上，神明敲开了他的房门。</p>
+<h3 id="_7">第三集：我不想当肥料</h3>
+<p>大晚上，神明端着他做的神秘黑暗料理说：“喂我”。</p>
+<p>苏洛抖着手一勺一勺喂完，神明凑到他耳边说：“上一个这么做的祭品，现在就埋在我的花园里。”</p>
+<p>苏洛僵住，硬挤出笑：“那，那她一定没有我会做人。”神明意味深长的笑了笑。</p>
+<p>在他走后，苏洛不禁打了个寒颤。再这样下去，下一个被做成汤的一定就是自己。思忖片刻，苏洛决定主动出击，寻找副本出口。</p>
+<p>可接下来几天，他根本找不到能独处的机会，每天都在以各种方式伺候那位神明——洗衣、做饭、讲故事……他们甚至越来越像真正的夫妻。</p>
+<p>而因为他毫无业绩，系统也不给他当工时算。苏洛跌坐在厨房仰天长叹：莫非，还没等我复活，我就又要死了吗？</p>
+<p>而苏洛没有发现，在他叹气的同时，门缝间露出一丝黑袍，然后又消失了。</p>
+<h3 id="_8">第四集：通关之法</h3>
+<p>苏洛打算趁夜深人静独处之时，偷偷探查整个庄园。</p>
+<p>他在花园刨了半天土，结果只有半截腐烂的白骨，上面还有看不懂的神秘纹路；做饭时瞅了瞅厨房，发现食谱上写着“需以神血为引”；路过祭坛时，瞟了一眼背面，发现字迹模糊看不清，只能离开。庄园外面根本出不去，而里面已经被他翻了个底朝天。</p>
+<p>苏洛尝试将得到的线索串联起来：“神血……指的是那个神明的血？他是被封印的，需要血来维持封印？或者需要血来解除封印？”</p>
+<p>苏洛觉得这之中还缺少最关键的线索，试图求助一下系统，但系统只是无情的发送：（＾ｖ＾） 。苏洛只能尝试转换思维，将线索的寻找方式从“物”转换到“人”。于是他开始观察神明。或许通关之法就藏在特定的人身上？</p>
+<p>苏洛想，如果他就是被封印在祭坛里的那个东西，那他身上一定有和祭坛有关的标记。黑袍底下到底藏着什么？我必须亲眼看到！</p>
+<p>然而神明的黑袍在白天就没脱下来过。</p>
+<p>苏洛急了，大手一拍脑门，仿佛开悟了：那袍子总不能睡觉的时候也穿着吧？</p>
+<p>是的，苏洛已经不在乎什么尊严了，他为了能近距离观察这个男的，选择只身入虎口——在他最脆弱的时候观察他。</p>
+<p>“夫妻…应当一起睡。”苏洛对着眼前的神明，发出了共处一室的邀请。</p>
+<h3 id="_9">第五集：一起睡</h3>
+<p>苏洛成功混进了神明的卧室。夜里他假装睡着，实则眯着眼观察。当神明背对着他脱下黑袍，他屏住呼吸盯紧——而黑袍之下什么都没有，只有一片流动的暗影。苏洛还没来得及思考，就看到神明的脸从阴影中偏过来，纯黑的眼睛盯着他，慢悠悠地说：“你在看我。”</p>
+<p>苏洛感到死神的镰刀正架在自己的脖子上，求生欲促使大脑极速转动，支支吾吾憋出来一句：“我…我认床，睡不着。”神明盯着他看了好几秒，忽然笑了，伸手把他往身边一拽：“那今晚别睡了。”苏洛整个人僵在神明怀里，动都不敢动。但就在贴上去的瞬间，他用余光瞥见——神明手腕内侧，有一道很浅很浅的、像烧痕一样的纹路，和祭坛石柱上的符文一模一样。</p>
+<p>系统突然提示：叮咚——检测到隐藏线索。</p>
+<p>苏洛在心里大喊：原来不是言情副本！是解密副本啊！！！就在这时，系统又接着提示：好感度+20%，黑化值+40％。警告：目前好感已达80％，黑化值开始增幅，副本进入高危模式。</p>
+<p>“我可爱的小新娘，是在盘算着如何回家吗？”</p>
+<h3 id="_10">第六集：希利欧</h3>
+<p>苏洛被神明圈在怀里，微凉的手指搭在他脖颈上，似有若无地摩挲。苏洛咽了口唾沫，努力平复剧烈的心跳，小心翼翼地说：“你手腕上的纹路和祭坛一模一样。”</p>
+<p>神明不否认，笑着反问：“所以呢？你打算怎么做？”苏洛正要回答，系统突然提示：好感度+10%，黑化度+50％。警告，警告，副本已进入极度高危模式！</p>
+<p>苏洛心里一惊，尝试理清自己最近发掘的线索——不成人形的身躯、祭坛与他手腕上的纹路、与世隔绝的庄园、从外界送来的祭品……开口试探性地询问：“你是被封印在祭坛里的神，对不对？这座庄园是囚禁你的牢笼。”</p>
+<p>神明眯了眯眼，露出一丝赞许的神情，但是语气毫无温度：“你很聪明。”他接着说：“所以囚禁我的枷锁是什么？”一个意想不到的问题被抛给了苏洛。苏洛忽然想起祭坛背面那行字——“■■■沉眠之地”。“你的名字……”脑中那刻意抹去的三个字，让苏洛到嘴边的话卡住了。就在这时，系统快速弹出三个候选真名，答对通关，答错即死。三个名字浮在半空，苏洛脑子嗡的一声，凭直觉瞎蒙了一个：“……希利欧？”</p>
+<p>系统提示：好感度+10％。警告：好感已达满值，该攻略对象非常危险——下一秒庄园崩塌，神明站在碎裂的穹顶下看着苏洛，嘴唇动了动说了句什么，被轰隆声盖过。白光一闪，苏洛回到蓝色空间。</p>
+<p>系统弹窗：复活币+50。是否继续？苏洛只记得他在废墟中令人脊背发凉的微笑，喘着粗气问系统“他最后说了什么？！”而系统只重复道“是否继续”。苏洛咬咬牙：“…继续！”</p>
+<p>白光一闪，画面切换。</p>
+<h3 id="_11">第七集：两面包夹芝士</h3>
+<p>苏洛再睁眼，发现身上穿着黑色修女服，四周是彩色玻璃窗和白蜡烛，似乎自己身处教堂。</p>
+<p>一个神父从告解室走出来微笑说“欢迎加入圣心教堂”，因为相隔太远外加室内昏暗，苏洛看不清他的脸。</p>
+<p>话音刚落，身后传来皮鞋踏地的声音——一个穿暗红色深v西装的男性魅魔从阴影里走出，凑到苏洛耳边说“神父在骗你，他在找替死鬼”。</p>
+<p>神父微微侧头：“恶魔蛊惑之言，不必理会。”两人同时注视着苏洛，神父伸手说“愿神指引你。”魅魔伸手说“亲爱的，来找我，我告诉你他的真面目~”</p>
+<p>系统弹窗：副本【欲望教堂】已开启。核心机制：存活三天。现在，请在魅魔和神父之间做出选择。</p>
+<p>苏洛在心里低声骂了句“我刚逃离一个精神病，现在又掉进两个精神病中间”，还没等苏洛做出选择，彩色玻璃窗猛地炸裂。</p>
+<p>月光照进来，照亮了神父的脸。苏洛瞳孔骤缩——那张脸，和希利欧一模一样。</p>
+<hr />
+<h2 id="_12">第一集正本</h2>
+<h3 id="1-1">1-1 写字楼内·深夜</h3>
+<p><strong>人物：苏洛</strong></p>
+<p>△凌晨两点，苏洛关掉电脑，看了眼手机余额：4.21，面无表情地锁了屏。</p>
+<p>苏洛：什么时候钱能像大运一样创过来啊……</p>
+<p>苏洛：不过明天就发工资了，吃什么好呢～</p>
+<p>△苏洛站起身，收拾桌面，想着明天的午饭，哼着歌离开了公司。</p>
+<h3 id="1-2">1-2 街道·深夜</h3>
+<p><strong>人物：苏洛</strong></p>
+<p>△苏洛低头走在空无一人的马路，路灯忽明忽灭。手机上是最近的网红餐厅。</p>
+<p>苏洛OS：好久没吃海地捞了，或者麦麦劳、肯肯基、萨梨鸭……</p>
+<p>△红灯倒数32秒。苏洛站定等候，脑子里还沉浸在美食幻想中。</p>
+<p>△忽然一束远光灯扫过来，他转头，瞳孔放大。一辆黑色轿车失控向他冲来。</p>
+<p>苏洛OS：这就是大运吗。可我明天就发工资了啊！？</p>
+<p>△嘭——画面全白。</p>
+<h3 id="1-3">1-3 蓝色空间·时间不明</h3>
+<p><strong>人物：苏洛、系统</strong></p>
+<p>△苏洛猛地睁眼。四周一片蔚蓝，他整个人浮在半空中。半透明的光屏“叮”一声弹出。</p>
+<p>系统：欢迎使用【不想死就干活吧】系统～检测到用户苏洛，生命体征：无。灵魂状态：已被系统锁定。</p>
+<p>系统：亲爱的宿主，要看广告充值复活币才能复活哦～</p>
+<p>△半透明的面板上赫然写着：当前复活币余额：0。</p>
+<p>苏洛：（愣住）（感慨）现在地狱也发展赛博ai了啊……</p>
+<p>系统：（＾ｖ＾） 宿主您的重点完全错了吧～</p>
+<p>系统：您可以选择进副本打工赚取复活币，时薪0.5个复活币。不过您没得选择只能打工～”</p>
+<p>苏洛：（震撼）我加班到凌晨两点，被车撞死，死了还得接着打工？！</p>
+<p>系统：是的哦～</p>
+<p>苏洛：你这也太黑心了吧！人死都不给超生啊！</p>
+<p>△系统面板没有任何反应，依然挂着那个（＾ｖ＾）表情。</p>
+<p>苏洛：……喂，我说你黑心呢，给点反应啊？</p>
+<p>△系统依然不动。</p>
+<p>苏洛：（破罐子破摔）算了，死都死了。（眼里闪过一丝狡黠）不过，我在地狱也应该是有亲戚的…哎，你知道苏凝吗，他应该是我大舅姥姥的哥哥的侄子的丈夫的小学同学。</p>
+<p>苏洛：我们都姓苏，算是半个亲戚，您看能不能走个关系……</p>
+<p>△系统在电子屏上保持着“（＾ｖ＾） ”的表情，突然出现的白光逐渐将苏洛包围。</p>
+<p>系统：没有这号人哦～祝您工作愉快～</p>
+<p>苏洛：（身体逐渐被白光包围，大喊）您再查一下啊！绝对有的啊！除了苏凝还有苏……</p>
+<p>△白光一闪，画面切换。</p>
+<h3 id="1-4">1-4 祭坛·夜</h3>
+<p><strong>人物：苏洛、神明</strong></p>
+<p>△苏洛睁眼，发现自己穿着白婚纱被铁链捆在石柱上。四周是巨型石柱和白蜡烛，石板缝隙里渗着暗红色的旧渍。</p>
+<p>苏洛OS：为什么是我穿婚纱？对面有异装癖？</p>
+<p>△远处传来脚步声，一个黑袍男人从阴影里走出来。头上标着类似好感度的东西。</p>
+<p>苏洛OS：什么东西？？好感度？？这到底是什么副本？？？</p>
+<p><strong>字幕：第一集完。</strong></p>
+<hr />
+<p><strong>2026.8.17</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
